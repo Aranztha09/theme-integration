@@ -1,7 +1,11 @@
 {
   "sections": {
-    "section-ivan" : {
-      "type": "section-ivan"
+    "section-ivan": {
+      "type": "section-ivan",
+      "settings": {
+        "title-boton": "Login",
+        "title-Hero": "Ivan Lopez"
+      }
     }
   },
   "order": [
