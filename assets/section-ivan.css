@@ -32,6 +32,7 @@
 
 .container-info-ivan {
     display: flex;
+    margin-bottom: 32px;
 }
 
 .container-title-subtitle {
@@ -69,4 +70,8 @@
 .subtitle-ivan {
     font-size: 18px;
     line-height: 23px;
+}
+
+.text1, .text2, .text3 {
+    margin-bottom: 27px;
 }
