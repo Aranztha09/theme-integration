@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.section-ivan {
+    padding: 30px 128px;
+}
+
+.father-button {
+    display: flex;
+    justify-content: end;
+}
