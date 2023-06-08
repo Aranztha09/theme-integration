@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .section-ivan {
@@ -11,4 +12,15 @@
 .father-button {
     display: flex;
     justify-content: end;
+}
+
+.button-login {
+    height: 39px;
+    min-width: 119px;
+    border: 2px solid #2F80ED;
+    border-radius: 10px;
+}
+
+.container-img-info-ivan {
+    display: flex;
 }
