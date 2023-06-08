@@ -6,7 +6,7 @@
 }
 
 .section-ivan {
-    padding: 30px 128px;
+    padding: 33px 33px 120px 128px;
 }
 
 .father-button {
@@ -27,4 +27,12 @@
 
 .container-img-info-ivan {
     display: flex;
+}
+
+.container-info-ivan {
+    display: flex;
+}
+
+.container-title-subtitle {
+    margin-left: 24px;
 }
