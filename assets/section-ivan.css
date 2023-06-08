@@ -57,3 +57,16 @@
 .container-img-ivan {
     margin-right: 64px;
 }
+
+.title-ivan, .subtitle-ivan {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 43px;
+    color: #222222;
+}
+
+.subtitle-ivan {
+    font-size: 18px;
+    line-height: 23px;
+}
