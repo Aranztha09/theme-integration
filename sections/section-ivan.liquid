@@ -3,7 +3,9 @@
 <section class="section-ivan">
 
     <div class="father-button">
-        <a href="" class="button-login">Login</a>
+        <a href="" class="button-login">
+            {{ section.settings.link }}
+        </a>
     </div>
 
     <div class="container-img-info-ivan">
@@ -41,3 +43,16 @@
 
 </section>
 
+
+{% schema %}  
+    {
+        "name": "section ivan"
+        "settings": [
+            {
+                "type":"url",
+                "id": "link",
+                "label": "Boton"
+            }
+        ]
+    }
+{% endschema %}
