@@ -4,7 +4,7 @@
 
     <div class="father-button">
         <a href="" class="button-login">
-            {{ section.settings.link }}
+            
         </a>
     </div>
 
@@ -21,7 +21,9 @@
                     <img src="https://cdn.shopify.com/s/files/1/0777/2651/5513/files/Union.png?v=1686260101" alt="" srcset="">
                 </div>
                 <div class="container-title-subtitle">
-                    <div class="title-ivan">Ivan Lopez</div>
+                    <div class="title-ivan">
+                        {{ section.settings.title-Hero }}
+                    </div>
                     <div class="subtitle-ivan">Co-founder</div>
                 </div>
             </div>
@@ -43,3 +45,16 @@
 
 </section>
 
+{% schema %}
+
+    {
+        "name": "section-ivan",
+        "settings":[
+            {
+            "type": "text",
+            "id": "title-Hero",
+            "label": "Title"
+            }
+        ]
+    }
+{% endschema %}
