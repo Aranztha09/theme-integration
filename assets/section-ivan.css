@@ -36,3 +36,15 @@
 .container-title-subtitle {
     margin-left: 24px;
 }
+
+.container-img-ivan {
+    width: 40%;
+}
+
+.container-img-ivan img {
+    width: 100%;
+}
+
+.cotainer-info-all {
+    width: 60%;
+}
