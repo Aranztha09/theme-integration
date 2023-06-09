@@ -10,7 +10,14 @@
 
     <div class="container-img-info-ivan">
         <div class="container-img-ivan">
-            <img src="{{ section.settings.image | img_url}}" alt="" srcset=""> 
+            {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'slide' %}
+                    <div class="slide" {{ block.shopify_attributes }}>
+                      {{ block.settings.image | image_url: width: 2048 | image_tag }}
+                    </div>
+                {% endcase %}
+              {% endfor %}
         </div>
 
         <div class="cotainer-info-all">
@@ -64,6 +71,19 @@
             "type": "text",
             "id": "title-Hero",
             "label": "Title"
+            }
+        ],
+        "blocks": [
+            {
+            "name": "Slide",
+            "type": "slide",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+                }
+            ]
             }
         ]
     }
