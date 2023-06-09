@@ -11,13 +11,18 @@
     <div class="container-img-info-ivan">
         <div class="container-img-ivan">
             {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'slide' %}
-                    <div class="slide" {{ block.shopify_attributes }}>
-                      {{ block.settings.image | image_url: width: 2048 | image_tag }}
-                    </div>
-                {% endcase %}
-              {% endfor %}
+                {%case block.type %}
+                  {%  when "descriptive_items" %}
+                      {% if block.settings.item_text != blank %}
+                        <div class="item-text">
+                          <img src="{{ block.settings.item_img | image_url }}" alt="">
+                          <div>
+                            <p href="#">{{ block.settings.item_text }}</p>
+                          </div>
+                        </div>
+                      {% endif %}
+                {%endcase%}
+              {%endfor%}
         </div>
 
         <div class="cotainer-info-all">
@@ -73,18 +78,19 @@
             "label": "Title"
             }
         ],
-        "blocks": [
-            {
-            "name": "Slide",
-            "type": "slide",
-            "settings": [
-                {
-                "type": "image_picker",
-                "id": "image",
-                "label": "Image"
-                }
-            ]
-            }
+    "blocks": [
+      {
+        "name": "Descriptive Items",
+        "type": "descriptive_items",
+        "limit": 4,
+        "settings": [
+          {
+            "id": "item_text",
+            "label": "Item text",
+            "type": "text"
+          },
         ]
+        }
+    ]
     }
 {% endschema %}
