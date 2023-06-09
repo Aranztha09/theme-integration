@@ -5,7 +5,10 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image_14.png",
         "title-boton": "Login",
-        "title-Hero": "Ivan Lopez"
+        "title-Hero": "Ivan Lopez",
+        "subtitle-Hero": "aa",
+        "subtitle-Hero1": "",
+        "subtitle-Hero2": ""
       }
     }
   },

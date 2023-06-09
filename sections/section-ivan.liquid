@@ -10,7 +10,7 @@
 
     <div class="container-img-info-ivan">
         <div class="container-img-ivan">
-            {% if section.settings.main_image_desktop != blank %}
+            <img src="{{ section.settings.image | img_url}}" alt="" srcset=""> 
         </div>
 
         <div class="cotainer-info-all">
@@ -24,21 +24,19 @@
                     <div class="title-ivan">
                         {{ section.settings.title-Hero }}
                     </div>
-                    <div class="subtitle-ivan">
-                        {{ section.settings.subtitle-Hero }}
-                    </div>
+                    <div class="subtitle-ivan">Co-founder</div>
                 </div>
             </div>
 
             <div class="text-all">
                 <div class="text1">
-                    {{ section.settings.text-Hero1 }}
+                    {{ section.settings.subtitle-Hero1 }}
                 </div>
                 <div class="text2">
-                    {{ section.settings.text-Hero2 }}
+                    {{ section.settings.subtitle-Hero2 }}
                 </div>
                 <div class="text3">
-                    {{ section.settings.text-Hero3}}
+                    {{ section.settings.subtitle-Hero3}}
                 </div>
             </div>
 
@@ -53,9 +51,9 @@
         "name": "section-ivan",
         "settings":[
             {
-            "id": "main_image_desktop",
-            "label": "Desktop Main Image",
-            "type": "image_picker"
+            "type": "image_picker",
+            "id": "image",
+            "label": "Imagen"
             },
             {
             "type": "text",
@@ -70,22 +68,17 @@
             {
             "type": "text",
             "id": "subtitle-Hero",
-            "label": "Subtitle"
+            "label": "Subtitle1"
             },
             {
             "type": "text",
-            "id": "text-Hero1",
-            "label": "text1"
+            "id": "subtitle-Hero1",
+            "label": "Subtitle2"
             },
             {
             "type": "text",
-            "id": "text-Hero2",
-            "label": "text2"
-            },
-            {
-            "type": "text",
-            "id": "text-Hero3",
-            "label": "text3"
+            "id": "subtitle-Hero2",
+            "label": "Subtitle3"
             }
         ]
     }
