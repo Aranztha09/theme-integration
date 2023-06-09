@@ -10,7 +10,7 @@
 
     <div class="container-img-info-ivan">
         <div class="container-img-ivan">
-            <img src="https://cdn.shopify.com/s/files/1/0777/2651/5513/files/image_14.png?v=1686259823" alt="" class="img-ivan">
+            {{ section.settings.img }}
         </div>
 
         <div class="cotainer-info-all">
@@ -50,6 +50,11 @@
     {
         "name": "section-ivan",
         "settings":[
+            {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Imagen"
+            },
             {
             "type": "text",
             "id": "title-boton",
